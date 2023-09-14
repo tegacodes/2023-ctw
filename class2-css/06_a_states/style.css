@@ -1,0 +1,14 @@
+a {
+  color: aqua;
+  background: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background: aqua;
+}
+
+a:visited {
+  text-decoration: underline;
+}

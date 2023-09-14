@@ -1,0 +1,35 @@
+h1 {
+  font-size: 1em;
+  background-image: linear-gradient(red, yellow);
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+p {
+  color: green;
+  font-size: 1em;
+}
+
+.header {
+  /* position: absolute;*/   /*Position is relative to the page .. similar to working with the canvas. */
+position: fixed;   /* Position is relative to the viewport.. */
+  background-color: blue;
+  width: 100%;
+}
+
+.gradient {
+  background-image: radial-gradient(red, yellow);
+}
+
+.overlayText {
+  font-size: 50px;
+  position: absolute;  /* Position is relative to the viewport.. */
+  top: 50vh;
+  left: 10vw;
+} */

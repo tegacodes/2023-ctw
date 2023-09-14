@@ -1,0 +1,32 @@
+h1 {
+  font-size: 1em;
+  background-image: linear-gradient(red, yellow);
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+p {
+  color: green;
+  font-size: 1em;
+}
+
+.frog {
+  color: fuchsia;
+  font-size: 25px;
+}
+
+.koala {
+  color: orange;
+  font-size: 40px;
+}
+
+.gradient {
+  background-image: radial-gradient(red, yellow);
+s
+}

@@ -1,0 +1,13 @@
+p {
+  color: green;
+  font-size: 20px;
+  background: black;
+}
+
+.cat {
+  background: pink;
+}
+
+#first-section {
+  font-family: monospace;
+}

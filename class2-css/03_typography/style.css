@@ -1,0 +1,10 @@
+p {
+  font-family: Arial; /* web safe fonts: http://www.w3schools.com/cssref/css_websafe_fonts.asp */
+  font-size: 50px;
+  line-height: 2em; /* 1 em = the currently specified font size */
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: "Sofia", sans-serif;
+}

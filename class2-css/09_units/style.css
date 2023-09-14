@@ -1,0 +1,30 @@
+h1 {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 2vh;
+}
+
+h4 {
+  font-size: 10vh;
+}
+
+p {
+  color: green;
+  font-size: 1em;
+}
+
+.frog {
+  color: fuchsia;
+  font-size: 25px;
+}
+
+.koala {
+  color: orange;
+  font-size: 40px;
+}
