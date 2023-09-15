@@ -11,3 +11,7 @@ p {
 #first-section {
   font-family: monospace;
 }
+
+#second-section {
+  background: green;
+}
