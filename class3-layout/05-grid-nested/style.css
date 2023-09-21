@@ -1,0 +1,25 @@
+.grid1 {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  /* grid-template-columns: 1fr 1fr 2fr; */
+  /* grid-template-columns: 200px 1fr 1fr; */
+  background-color: pink;
+}
+
+.grid2 {
+  margin: 10px;
+  display: grid;
+  grid-template-rows: 100px 300px 50px;
+  background-color: yellow;
+}
+
+.grid3 {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 200px 200px 200px;
+  background-color: aqua;
+  /* align-items: center;
+  text-align: center; */
+}

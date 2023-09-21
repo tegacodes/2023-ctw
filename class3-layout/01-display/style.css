@@ -1,0 +1,18 @@
+/* can you make the image appear*/
+/* try different display parameters and different float parameters to see how the layout changes*/
+
+h1 {
+  border: 1px solid red;
+  background-color: pink;
+}
+
+p {
+  border: 1px solid green;
+  display: block;
+}
+
+img {
+  width: 200px;
+  display: block;
+  float: right;
+}

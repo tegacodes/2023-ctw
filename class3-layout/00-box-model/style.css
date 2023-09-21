@@ -1,0 +1,17 @@
+/* What happens if you change display to inline? */
+/* Experiment with adding the width, height, margin, padding properties to these elements */
+/* Experiment with the different css units: px, % vw */
+
+h1 {
+  border: 1px solid red;
+  background-color: pink;
+}
+
+p {
+  border: 1px solid green;
+  display: block;
+}
+
+footer {
+  border: 1px solid blue;
+}

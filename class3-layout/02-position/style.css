@@ -1,0 +1,19 @@
+/* change the value for the position property in h1. What happens when it is absolute, fixed, relative or sticky*/
+/* experiment with the top and left propertys as you change the position.*/
+
+.container {
+  width: 50vw;
+}
+
+h1 {
+  border: 1px solid red;
+  background-color: pink;
+  position: static;
+  top: 0px;
+  left: 50px;
+}
+
+p {
+  border: 1px solid green;
+  padding-bottom: 200px;
+}

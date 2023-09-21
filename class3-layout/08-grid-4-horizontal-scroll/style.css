@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "col1 col2 col3";
+  height: 100vh;
+  /* width: 200vh; */
+}
+.col1 {
+  grid-area: col1;
+  background-color: fuchsia;
+}
+.col2 {
+  grid-area: col2;
+  background-color: yellow;
+}
+.col3 {
+  grid-area: col3;
+  background-color: yellowgreen;
+}
+
+.col1,
+.col2,
+.col3 {
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+  border-right: 5px solid black;
+}
+
+/* p {
+  padding-bottom: 2000px;
+} */
