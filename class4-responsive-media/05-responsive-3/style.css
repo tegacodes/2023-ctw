@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+div {
+  color: white;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+
+  /* set up the underlying grid  */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 5fr;
+  /* set up the grid areas */
+  grid-template-areas:
+    "one two two two two"
+    "one three three three four"
+    "one five five five five";
+  gap: 5px;
+  height: 100vh;
+}
+
+/* for every div in the grid container, set display to grid and align items to center. */
+.container > div {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+/* set up divs and assign them to grid areas. */
+.one {
+  grid-area: one;
+  background-color: salmon;
+}
+
+.two {
+  grid-area: two;
+  background-color: orange;
+}
+
+.three {
+  grid-area: three;
+  background-color: palegreen;
+}
+.four {
+  grid-area: four;
+  background-color: green;
+}
+
+.five {
+  grid-area: five;
+  background-color: paleturquoise;
+}
+
+.main img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    /* set up a new grid to be used on mobile */
+  }
+}

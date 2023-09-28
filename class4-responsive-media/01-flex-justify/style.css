@@ -1,0 +1,11 @@
+.flex-box {
+  display: flex;
+  flex-direction: row; /* row row-reverse column column-reverse   */
+  justify-content: space-between;
+  /* justify-content: flex-start | flex-end | center | space-between | space-around; */
+}
+
+.flex-box > div {
+  /* This syntax styles all divs in the flex-box */
+  background: lightblue;
+}

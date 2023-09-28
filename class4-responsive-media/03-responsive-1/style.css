@@ -1,0 +1,46 @@
+body {
+  background-color: violet;
+}
+
+/* RESET DEFAULT STYLES */
+h1,
+h2,
+h3,
+p {
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  /* inherit specifies that a property should inherit its value from its parent element. */
+  /* Here, the header and p tags inherit their font weight and style from the body tag. */
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 2em;
+}
+
+img {
+  width: 100%;
+}
+
+/* This is a media query. The @media rule provides a block of CSS properties only if a certain condition is true.*/
+/* The media query below, takes effect if the screen is smaller than 600px. */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: palegreen;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  img {
+    display: none;
+  }
+}

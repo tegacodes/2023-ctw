@@ -1,0 +1,20 @@
+.flex-box {
+  display: flex;
+  flex-direction: row; /* row row-reverse column column-reverse   */
+}
+
+div {
+  background-color: pink;
+}
+
+.koalas {
+  flex-grow: 1;
+}
+
+.kangaroos {
+  flex-grow: 3;
+}
+
+.platapi {
+  flex-grow: 1;
+}

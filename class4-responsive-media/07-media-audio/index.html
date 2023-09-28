@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pics</title>
+  </head>
+  <body>
+    <h1>Birds of Australia</h1>
+    <audio controls>
+      <source src="assets/lorikeets.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio controls autoplay muted>
+      <source src="assets/willy-wagtail.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      The last player starts on autoplay muted. But you still need to unmute.
+      Most browsers won't let you autoplay a track. You either have to click
+      play or unmute.
+    </p>
+    <p>
+      Can you style a audio player? Not really, but you can do this trick where
+      you can use a little javascript to assign the players actions to buttons
+      and then style the buttons. We will be doing JS next week so stay tuned
+      for more details on this.
+    </p>
+    <audio id="player" src="assets/kookaburra.wav" type="audio/wav"></audio>
+    <div>
+      <button onclick="document.getElementById('player').play()">Play</button>
+      <button onclick="document.getElementById('player').pause()">Pause</button>
+      <button onclick="document.getElementById('player').volume += 0.1">
+        Vol +
+      </button>
+      <button onclick="document.getElementById('player').volume -= 0.1">
+        Vol -
+      </button>
+    </div>
+  </body>
+</html>

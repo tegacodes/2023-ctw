@@ -1,0 +1,8 @@
+.flex-box {
+  display: flex;
+  flex-direction: column; /* row row-reverse column column-reverse   */
+}
+
+.div {
+  background-color: pink;
+}

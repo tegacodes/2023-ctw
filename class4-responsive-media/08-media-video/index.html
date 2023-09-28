@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pics</title>
+  </head>
+  <body>
+    <p>What about video?</p>
+    <p>This is the standard HTML video player:</p>
+    <video width="320" height="240" controls>
+      <source src="assets/bower.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <p>And I guess you could do the same button trick if you wanted?</p>
+    <video id="vid" src="assets/bower.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div>
+      <button onclick="document.getElementById('vid').play()">Play</button>
+      <button onclick="document.getElementById('vid').pause()">Pause</button>
+      <button onclick="document.getElementById('vid').volume += 0.1">
+        Vol +
+      </button>
+      <button onclick="document.getElementById('vid').volume -= 0.1">
+        Vol -
+      </button>
+    </div>
+  </body>
+</html>

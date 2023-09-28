@@ -1,0 +1,40 @@
+body {
+  background-color: violet;
+}
+
+/* RESET DEFAULT STYLES */
+h1,
+h2,
+h3,
+p {
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+}
+
+ul {
+  font-size: 4em;
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  display: inline;
+  padding: 3px 10px;
+  background: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: palegreen;
+  }
+
+  ul {
+    font-size: 1.5em;
+  }
+}
