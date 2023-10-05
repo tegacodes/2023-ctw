@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>one</p>
+    <p>two</p>
+    <p>three</p>
+    <p>four</p>
+    <p>five</p>
+    <script>
+      let ps = document.querySelectorAll("p");
+
+      for (let i = 0; i < ps.length; i++) {
+        ps[i].style.marginLeft = Math.random() * 50 + "px";
+      }
+    </script>
+  </body>
+</html>
