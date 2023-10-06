@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="button1">Boop</button>
+    <button id="button2">Yarl</button>
+    <button id="button3">Cluck</button>
+    <script>
+      document.querySelector("#button1").addEventListener("click", () => {
+        makeWindow("https://en.wikipedia.org/wiki/Macrotis", 100, 200);
+      });
+      document.querySelector("#button2").addEventListener("click", () => {
+        makeWindow("https://en.wikipedia.org/wiki/Quokka", 400, 150);
+      });
+      document.querySelector("#button3").addEventListener("click", () => {
+        makeWindow("https://en.wikipedia.org/wiki/Quoll", 250, 300);
+      });
+
+      function makeWindow(url, xpos, ypos) {
+        let newwindow = window.open(
+          url,
+          "_blank",
+          "toolbar=yes,scrollbars=yes, resizable=yes, top=500, left=500, width=400, height=400"
+        );
+        newwindow.moveTo(xpos, ypos);
+        //     document.getElementById("hid").style.visibility = "visible";
+      }
+    </script>
+  </body>
+</html>

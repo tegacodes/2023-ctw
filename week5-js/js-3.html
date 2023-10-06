@@ -7,9 +7,13 @@
   </head>
   <body>
     <button id="button1">Click me!</button>
+    <p>
+      This button has been clicked <span id="counter">0</span> times!
+    </p>
 
     <script>
       let b = document.querySelector("#button1");
+      let msg = document.querySelector("#counter");
       let n = 0;
 
       b.addEventListener("click", onClick);
@@ -17,6 +21,7 @@
       function onClick() {
         console.log("you clicked me " + n + " times");
         n++;
+        msg.textContent = n;
       }
     </script>
   </body>

@@ -20,4 +20,5 @@ function draw() {
   //rect(x,y,w,h);
   rect(mouseX, mouseY, 50, 50);
   print(c);
+  text("hello", 50, 50);
 }
