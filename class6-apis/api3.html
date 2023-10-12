@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 60px;
+        text-align: center;
+        margin: auto;
+        max-width: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Bikes</p>
+    <i>Location:</i>
+    <div id="name">Loading...</div>
+    <br />
+    <i>Free EBikes:</i>
+    <div id="bikes">Loading...</div>
+
+    <script>
+      async function getBikes() {
+        let response = await fetch(
+          "https://api.citybik.es/v2/networks/citi-bike-nyc"
+        );
+        let data = await response.json();
+        let bike1 = data.network.stations[229].name; //navigate the json tree coming from the api. Take a look at what it looks like by pasting the url above in the browser and looking at the console.
+        document.querySelector("#name").textContent = bike1;
+
+        let bike2 = data.network.stations[229].extra.ebikes;
+        document.querySelector("#bikes").textContent = bike2;
+      }
+      getBikes();
+    </script>
+  </body>
+</html>

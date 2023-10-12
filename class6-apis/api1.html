@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 100px;
+        text-align: center;
+        margin: auto;
+        max-width: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fact">Loading cat fact...</div>
+
+    <script>
+      async function getFact() {
+        //function must be async so the code waits for the data to load
+
+        let response = await fetch("https://meowfacts.herokuapp.com/"); //use await keyword inside async function. It means it won't go to the next line until this completes. The response is an object with a bunch of stuff in it including the data we want.
+
+        let catData = await response.json(); // use await again with the json() function to get the data out of the response object. Again, it won't go to the next line until its got the data.
+        console.log(catData); //take a look at the data
+
+        let catFact = catData.data[0];
+
+        document.querySelector("#fact").textContent = catFact; //replace element with id #fact in website with a cat fact.
+      }
+      getFact();
+    </script>
+  </body>
+</html>

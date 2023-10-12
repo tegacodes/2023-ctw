@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 100px;
+        text-align: center;
+        margin: auto;
+        max-width: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ocean">Oceans loading...</div>
+
+    <script>
+      //This example fetches the data from a local file.
+      async function getOcean() {
+        let response = await fetch("oceans.json");
+        let oceanData = await response.json();
+        let randomNumber = Math.floor(Math.random() * 100); //floor makes it an integer
+        let ocean = oceanData.seas[randomNumber].name;
+        document.querySelector("#ocean").textContent = ocean;
+      }
+      setInterval(getOcean, 2000); //get a random data point every 2 seconds.
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="weather">Hello! Waiting for the weather ...</div>
+
+    <script>
+      async function getWeather(lat, lon) {
+        let response = await fetch(
+          `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=temperature_2m`
+        ); //use string interpolation to put together the request. Note the use of backticks, curlybrackets and {}. See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+        let data = await response.json(); //get the json data from it
+
+        console.log(data); // log the data
+
+        let w = data.hourly.temperature_2m[0];
+        console.log(w);
+
+        document.querySelector("#weather").textContent = w;
+      }
+
+      getWeather("52.52", "13.41"); //get weather for different lat/lons
+    </script>
+  </body>
+</html>
